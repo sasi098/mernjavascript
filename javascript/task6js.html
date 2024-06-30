@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        .login-container h1 {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .login-container button {
+            background-color: #3897f0;
+            border-color: #3897f0;
+        }
+        .login-container button:hover {
+            background-color: #3578e5;
+            border-color: #3578e5;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Instagram</h1>
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" id="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <button type="button" class="btn btn-primary btn-block" onclick="login()">Log in</button>
+            <div class="form-check text-left mt-3">
+                <input type="checkbox" class="form-check-input" id="rememberMe">
+                <label class="form-check-label" for="rememberMe">Remember me</label>
+                <a href="#" class="float-right">Forgot Password?</a>
+            </div>
+            <div class="signup mt-3">
+                Don't have an account? <a href="#">Sign up here.</a>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            alert("Username: " + username + "\nPassword: " + password);
+        }
+    </script>
+
+    
+</body>
+</html>
